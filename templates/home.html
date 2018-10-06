@@ -1,0 +1,18 @@
+<html>
+   	<head>Welcome to the Computer Science Club Database Website</head>
+   		<body>
+   
+    		<p>Upload CSV File: <a href="upload">Upload</a></p>
+    		<p>View the Email List: <a href="email_list">Email List</a></p>
+      		<table style="width: 110%">
+  				{% for user in community %}
+    				<tr>
+    	  				<td>{{user[0]}}</td>
+    	 				<td>{{user[1]}}</td>
+    	 				<td>{{user[2]}}</td>
+    	 				<td>{{user[3]}}</td>
+    				</tr>
+  				{% endfor %}
+			</table>
+   		</body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+   	<head>Here is the CS Club Email List</head>
+   		<body>
+   			<p>Go back to the home page: <a href="home">Home</a></p>
+      		<table style="width: 110%">
+  				{% for user in community %}
+    				<tr>
+    	 				<td>{{user[3]}}</td>
+    				</tr>
+  				{% endfor %}
+			</table>
+   		</body>
+</html>
