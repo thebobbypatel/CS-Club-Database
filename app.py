@@ -24,7 +24,7 @@ def uploads_file():
       f = request.files['file']
       f.save(secure_filename(f.filename))
       databasecontroller.load_data(f.filename)
-      return '''<html><head>Cool! File uploaded Successfully.</head><body><p>Return to homepage: <a href="home">homepage</a></p></body></html>'''
+      return render_template('uploader.html')
 
 if __name__ == '__main__':
 	app.run()
